@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="bg-gray-900 dark:bg-gray-900 py-20">
+        <div class="xl:container mx-auto px-6 md:px-12">
+          <div class="mb-28">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+              About Tailus
+            </h2>
+            <p class="text-center text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">
+              Tailus is a leading technology company focused on revolutionizing the digital world. We strive to empower individuals and businesses with cutting-edge solutions that enhance productivity and drive innovation.
+            </p>
+          </div>
+          <div class="flex justify-center gap-6">
+            <div class="group space-y-4 text-center">
+              <div
+                class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56"
+              >
+                <img
+                  class="mx-auto h-full w-full -rotate-45 scale-125 object-fill transition duration-300 group-hover:scale-[1.4]"
+                  src="{{ url_for('static', filename='Ebook-pana.png') }}"
+                  alt="woman"
+                  loading="lazy"
+                  width="640"
+                  height="805"
+                />
+              </div>
+              <div class="pt-4">
+                <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+                <span class="block text-sm text-gray-500">CEO-Founder</span>
+              </div>
+              <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" target="_blank" aria-label="facebook">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 hover:text-primary"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                </a>
+                <!-- Other social media icons -->
+              </div>
+            </div>
+            <div class="group space-y-4 text-center">
+                <div
+                  class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56"
+                >
+                  <img
+                    class="mx-auto h-full w-full -rotate-45 scale-125 object-fill transition duration-300 group-hover:scale-[1.4]"
+                    src="{{ url_for('static', filename='Ebook-pana.png') }}"
+                    alt="woman"
+                    loading="lazy"
+                    width="640"
+                    height="805"
+                  />
+                </div>
+                <div class="pt-4">
+                  <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+                  <span class="block text-sm text-gray-500">CEO-Founder</span>
+                </div>
+                <div class="flex justify-center space-x-4 text-gray-500">
+                  <a href="#" target="_blank" aria-label="facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 hover:text-primary"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Other social media icons -->
+                </div>
+              </div>
+              <div class="group space-y-4 text-center">
+                <div
+                  class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56"
+                >
+                  <img
+                    class="mx-auto h-full w-full -rotate-45 scale-125 object-fill transition duration-300 group-hover:scale-[1.4]"
+                    src="{{ url_for('static', filename='Ebook-pana.png') }}"
+                    alt="woman"
+                    loading="lazy"
+                    width="640"
+                    height="805"
+                  />
+                </div>
+                <div class="pt-4">
+                  <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+                  <span class="block text-sm text-gray-500">CEO-Founder</span>
+                </div>
+                <div class="flex justify-center space-x-4 text-gray-500">
+                  <a href="#" target="_blank" aria-label="facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 hover:text-primary"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Other social media icons -->
+                </div>
+              </div>
+              <div class="group space-y-4 text-center">
+                <div
+                  class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56"
+                >
+                  <img
+                    class="mx-auto h-full w-full -rotate-45 scale-125 object-fill transition duration-300 group-hover:scale-[1.4]"
+                    src="{{ url_for('static', filename='Ebook-pana.png') }}"
+                    alt="woman"
+                    loading="lazy"
+                    width="640"
+                    height="805"
+                  />
+                </div>
+                <div class="pt-4">
+                  <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+                  <span class="block text-sm text-gray-500">CEO-Founder</span>
+                </div>
+                <div class="flex justify-center space-x-4 text-gray-500">
+                  <a href="#" target="_blank" aria-label="facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 hover:text-primary"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Other social media icons -->
+                </div>
+              </div>
+              <div class="group space-y-4 text-center">
+                <div
+                  class="mx-auto h-56 w-56 rotate-45 overflow-hidden rounded-[4rem] md:h-40 md:w-40 lg:h-56 lg:w-56"
+                >
+                  <img
+                    class="mx-auto h-full w-full -rotate-45 scale-125 object-fill transition duration-300 group-hover:scale-[1.4]"
+                    src="{{ url_for('static', filename='Ebook-pana.png') }}"
+                    alt="woman"
+                    loading="lazy"
+                    width="640"
+                    height="805"
+                  />
+                </div>
+                <div class="pt-4">
+                  <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+                  <span class="block text-sm text-gray-500">CEO-Founder</span>
+                </div>
+                <div class="flex justify-center space-x-4 text-gray-500">
+                  <a href="#" target="_blank" aria-label="facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 hover:text-primary"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Other social media icons -->
+                </div>
+              </div>
+            <!-- Repeat the above block for other team members -->
+          </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Additional sections like values, history, etc. -->
+
+    
+</body>
+</html>

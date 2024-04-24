@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS for two-column layout */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    {% include 'navbar.html' %}
+
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-semibold mb-8">Diabetes Prediction</h1>
+        <form action="/predict" method="post" class="space-y-4">
+            <div class="form-grid">
+                <div>
+                    <label for="pregnancies" class="block text-sm font-medium text-gray-700">Pregnancies:</label>
+                    <input type="number" name="pregnancies" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="glucose" class="block text-sm font-medium text-gray-700">Glucose:</label>
+                    <input type="number" name="glucose" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="blood_pressure" class="block text-sm font-medium text-gray-700">Blood Pressure:</label>
+                    <input type="number" name="blood_pressure" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="skin_thickness" class="block text-sm font-medium text-gray-700">Skin Thickness:</label>
+                    <input type="number" name="skin_thickness" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="insulin" class="block text-sm font-medium text-gray-700">Insulin:</label>
+                    <input type="number" name="insulin" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="bmi" class="block text-sm font-medium text-gray-700">BMI:</label>
+                    <input type="number" name="bmi" step="0.01" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="dpf" class="block text-sm font-medium text-gray-700">Diabetes Pedigree Function:</label>
+                    <input type="number" name="dpf" step="0.01" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="age" class="block text-sm font-medium text-gray-700">Age:</label>
+                    <input type="number" name="age" required class="mt-1 px-4 py-2 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
